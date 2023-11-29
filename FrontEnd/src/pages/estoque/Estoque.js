@@ -113,7 +113,7 @@ export const Estoque = () => {
                   <td>{item.Nome ?? "<sem nome>"}</td>
                   <td>{item.Descrição}</td>
                   <td>
-                    <img
+                    <img className="imagem"
                       src={"http://191.234.202.83:5000/" + item.Imagem}
                       alt="Imagem da camisa"
                     />
