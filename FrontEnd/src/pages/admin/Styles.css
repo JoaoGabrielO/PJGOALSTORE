@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;900&family=NTR&family=Numans&family=Odor+Mean+Chey&family=Poppins:ital,wght@1,700&family=Saira+Stencil+One&display=swap");
+body {
+  background: #1C1C1C;
+  flex-direction: column;
+  display: flex;
+  margin: 0;
+}
+body .divPrinc {
+  background-color: #8B0000;
+  position: relative;
+  flex-direction: row;
+  height: 100px;
+  width: 100.4%;
+  margin: 0px;
+}
+body .divPrinc .adminIcon {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 1540px;
+  top: 25px;
+  z-index: 1;
+}
+body .divPrinc .coracaoIcon {
+  position: absolute;
+  width: 50px;
+  height: 45.27px;
+  left: 1650px;
+  top: 33px;
+}
+body .divPrinc .carrinhoIcon {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 1750px;
+  top: 33px;
+}
+body .divPrinc .pesquisa {
+  position: absolute;
+  top: 35px;
+  left: 767px;
+  height: 45px;
+  font-family: "NTR";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  color: #000000;
+  background: #FFFFFF;
+  padding-left: 75px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  border: 8px solid #FFFFFF;
+  border-radius: 50px;
+}
+body .divPrinc .imgLupa {
+  position: absolute;
+  top: 35px;
+  left: 780px;
+  height: 45px;
+  cursor: pointer;
+}
+body .divPrinc .goalStore {
+  position: relative;
+  width: 458px;
+  left: 58px;
+  bottom: 30px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 104px;
+  text-align: center;
+  color: #FFFFFF;
+  -webkit-text-stroke: 5px rgb(0, 0, 0);
+}
+body .imagensFundo {
+  background-color: white;
+}
+body .imagensFundo .ronaldo {
+  margin-top: 20px;
+  height: 250px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+}
+body .imagensFundo .ronaldo h1 {
+  position: relative;
+  font-family: "Saira Stencil One";
+  font-size: 58px;
+  color: white;
+  width: 20%;
+  left: 340px;
+  top: -20px;
+}
+body .imagensFundo .ronaldo .imgNeymarSelec {
+  position: relative;
+  left: 300px;
+  top: -35px;
+  height: 285px;
+  z-index: 1;
+}
+body .imagensFundo .ronaldo .imgRonaldo {
+  position: relative;
+  right: 640px;
+  top: -37px;
+  height: 290px;
+}
+body .imagensFundo .ronaldo .imgMessi {
+  position: relative;
+  left: 250px;
+  top: -78.5px;
+  height: 360px;
+}
+body .maisVendidas {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 530px;
+  background-color: #FFFFFF;
+}
+body .maisVendidas h1 {
+  position: relative;
+  bottom: 55px;
+  font-family: "Odor Mean Chey";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 145px;
+  color: #000000;
+}
+body .maisVendidas .camisas {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  bottom: 85px;
+}
+body .maisVendidas .camisas section {
+  background-color: whitesmoke;
+  position: relative;
+  cursor: pointer;
+}
+body .maisVendidas .camisas section .imgCamisa {
+  position: relative;
+  height: 200px;
+  width: 60%;
+}
+body .maisVendidas .camisas section p {
+  font-family: "Numans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000000;
+}
+body .maisVendidas .botoes {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+body .maisVendidas .botoes .emPromocao {
+  box-sizing: border-box;
+  position: relative;
+  bottom: 45px;
+  background: #000000;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(80, 77, 77, 0.089), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  font-family: "Odor Mean Chey";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 35px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+body .maisVendidas .botoes .lancamentos {
+  box-sizing: border-box;
+  position: relative;
+  bottom: 45px;
+  background: #000000;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(80, 77, 77, 0.089), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  font-family: "Odor Mean Chey";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 35px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+body .maisVendidas .botoes .clubes {
+  box-sizing: border-box;
+  position: relative;
+  bottom: 45px;
+  width: 6%;
+  background: #000000;
+  border: 4px solid #FFFFFF;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(80, 77, 77, 0.089), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  font-family: "Odor Mean Chey";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 35px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+body .maisVendidas .botoes .selecoes {
+  box-sizing: border-box;
+  position: relative;
+  bottom: 45px;
+  width: 6%;
+  background: #000000;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(80, 77, 77, 0.089), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  font-family: "Odor Mean Chey";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 35px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+body .rodape {
+  position: relative;
+  margin-left: 0px;
+  width: 100%;
+  height: 79px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #8b0000;
+}
+body .rodape h2 {
+  position: relative;
+  right: 95px;
+  bottom: 10px;
+}
+body .rodape img {
+  position: absolute;
+  height: 30px;
+  cursor: pointer;
+}
+body .rodape .imgFacebook {
+  left: 1690px;
+  height: 50px;
+  top: 29px;
+}
+body .rodape .imgWhatsapp {
+  left: 1790px;
+  height: 35px;
+  top: 40px;
+}
+body .rodape .imgInstagram {
+  left: 1740px;
+  height: 38px;
+  top: 40px;
+}
+body .rodape .imgBoleto {
+  left: 955px;
+  height: 31px;
+  top: 42px;
+}
+body .rodape .imgElo {
+  left: 870px;
+  height: 31px;
+  top: 42px;
+}
+body .rodape .imgMasterCard {
+  left: 785px;
+  height: 31px;
+  top: 42px;
+}
+body .rodape .imgVisa {
+  left: 700px;
+  height: 31px;
+  top: 42px;
+}/*# sourceMappingURL=Styles.css.map */
