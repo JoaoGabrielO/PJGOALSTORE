@@ -21,7 +21,7 @@ export const Estoque = () => {
 
   const getCamisa = async () => {
     try {
-      let response = await axios.get("http://localhost:5000/camisa");
+      let response = await axios.get("http://191.234.202.83:5000/camisa");
       setListaCamisas(response.data);
       setImagem(response.data.imagem);
     } catch (error) {
@@ -32,7 +32,7 @@ export const Estoque = () => {
   const getCamisaNome = async () => {
     try {
       let response = await axios.get(
-        `http://localhost:5000/camisa/buscaNome/${nome}`
+        `http://191.234.202.83/camisa/buscaNome/${nome}`
       );
       setListaCamisas(response.data);
     } catch (error) {
