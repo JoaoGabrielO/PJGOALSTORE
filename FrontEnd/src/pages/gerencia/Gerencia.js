@@ -19,7 +19,7 @@ export const Gerencia = () => {
 
     const listarCamisas = async () => {
         try {
-            const response = await axios.get("http://localhost:5000/camisa");
+            const response = await axios.get("http://191.234.202.83:5000/camisa");
             setCamisas(response.data);
 
         } catch (error) {
@@ -46,13 +46,13 @@ export const Gerencia = () => {
         };
 
         try {
-            let r = await axios.post('http://localhost:5000/camisa', camisa);
+            let r = await axios.post('http://191.234.202.83:5000/camisa', camisa);
             let id = r.data.id;
 
             const formData = new FormData();
             formData.append('capa', arquivo);
 
-            r = await axios.put('http://localhost:5000/camisa/' + id + '/capa', formData, {
+            r = await axios.put('http://191.234.202.83:5000/camisa/' + id + '/capa', formData, {
                 headers: { 'Content-Type': 'multipart/form-data' }
             })
 
@@ -64,7 +64,7 @@ export const Gerencia = () => {
 
     const excluirCamisa = async (id) => {
         try {
-            let r = await axios.delete(`http://localhost:5000/camisa/delete/${id}`);
+            let r = await axios.delete(`http://191.234.202.83:5000/camisa/delete/${id}`);
             console.log("Camisa excluída com sucesso:", r.data.mensagem);
 
             // Armazenar a camisa excluída no estado
@@ -87,7 +87,7 @@ export const Gerencia = () => {
             categoria: categoria
         }
         try {
-            let r = await axios.put(`http://localhost:5000/camisa/alteraId/${id}`, camisa);
+            let r = await axios.put(`http://191.234.202.83:5000/camisa/alteraId/${id}`, camisa);
 
             setCamisaAlterada(r.data.camisa);
             console.log("Camisa alterada com sucesso:", r.data.mensagem);
@@ -176,7 +176,7 @@ export const Gerencia = () => {
                                         <td>{item.Descrição}</td>
                                         <td>
                                             <img
-                                                src={"http://localhost:5000/" + item.Imagem}
+                                                src={"http://191.234.202.83:5000/" + item.Imagem}
                                                 alt="Imagem da camisa"
                                             />
                                         </td>

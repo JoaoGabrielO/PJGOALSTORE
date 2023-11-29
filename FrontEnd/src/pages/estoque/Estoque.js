@@ -43,7 +43,7 @@ export const Estoque = () => {
   const getCamisaID = async () => {
     try {
       let response = await axios.get(
-        `http://localhost:5000/camisa/buscaId/${id}`
+        `http://191.234.202.83:5000/camisa/buscaId/${id}`
       );
       setListaCamisas(response.data);
       setImagem(response.data.imagem);
@@ -114,7 +114,7 @@ export const Estoque = () => {
                   <td>{item.Descrição}</td>
                   <td>
                     <img
-                      src={"http://localhost:5000/" + item.Imagem}
+                      src={"http://191.234.202.83:5000/" + item.Imagem}
                       alt="Imagem da camisa"
                     />
                   </td>
